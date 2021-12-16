@@ -50,7 +50,7 @@ def _screenshot_data(
     # else:
     #     assert isinstance(fig, ipv.Figure)
 
-    chrome = PyChromeDevTools.ChromeInterface(headless_kwargs)
+    chrome = PyChromeDevTools.ChromeInterface(**headless_kwargs)
     chrome.Network.enable()
     chrome.Page.enable()
     chrome.Page.navigate(url=html_filename)
