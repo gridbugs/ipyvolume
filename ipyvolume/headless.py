@@ -49,7 +49,7 @@ def _screenshot_data(
     #     fig = gcf()
     # else:
     #     assert isinstance(fig, ipv.Figure)
-
+    print("asdfasdf")
     chrome = PyChromeDevTools.ChromeInterface(**headless_kwargs)
     chrome.Network.enable()
     chrome.Page.enable()
